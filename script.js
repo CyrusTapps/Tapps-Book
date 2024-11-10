@@ -1,13 +1,13 @@
 const questions = [
+  "If you could have any superpower, what would it be?",
   "What is your favorite story or fairy tale?",
   "Who is your favorite character in any story?",
-  "If you could have any superpower, what would it be?",
   "What is your biggest dream?",
   "Do you believe in magic? Why or why not?",
   "If you could travel anywhere in time, where would you go?",
   "What makes you feel brave?",
   "What is something that scares you?",
-  "If you had a magic wand, what would you wish for?",
+  "If you had a genie, what would you wish for?",
   "What is your favorite animal?",
   "What makes you happy?",
   "What is something you are really good at?",
@@ -77,6 +77,17 @@ function saveAnswersToFile() {
   a.click();
   document.body.removeChild(a);
   window.URL.revokeObjectURL(url);
+
+  if (name === "Carter") {
+    alert(
+      `Yooo ${name}! Can't believe we almost forgot about uncle Shawn being lowkey the GOAT fr! Keep slaying bestie, you're giving main character energy rn! Love you!`
+    );
+  } else if (name === "Landon") {
+    alert(
+      `Bestie ${name}! We forgor 💀 to spill the tea about why uncle Shawn is such a vibe! Next time fs fs! Keep being iconic! Love you!`
+    );
+  }
+  setTimeout(() => window.location.reload(), 1000);
 }
 
 function nextQuestion() {
