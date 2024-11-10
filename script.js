@@ -62,6 +62,8 @@ function saveAnswersToFile() {
   // Save to localStorage with name
   localStorage.setItem(`interviewAnswers_${name}`, JSON.stringify(answers));
 
+  console.log(content);
+
   // Create and download text file with name in filename
   const blob = new Blob([content], { type: "text/plain" });
   const url = window.URL.createObjectURL(blob);
