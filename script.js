@@ -104,3 +104,5 @@ prevButton.addEventListener("click", prevQuestion);
 
 // Display the first question
 displayQuestion();
+
+// Copyright 2024 Shawn M. Tapps//
