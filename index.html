@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalized Story Creator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Personalized Story Creator
+        <h4>
+          &nbsp;&nbsp;&nbsp;&nbsp;Welcome and thank you for taking the time to
+          help me in creating a story that is all your own. I am asking you 20
+          questions to help gather information that will be used to create the
+          most awesome story....just for you. If you provide a lot of detail in
+          your anwers, you will get more specific detail in the finished
+          product.<br />
+          Love you much,
+
+          <h3 class="signature">&nbsp;&nbsp;&nbsp;&nbsp;Uncle Shawn</h3>
+        </h4>
+      </h1>
+      <h4>Please select who we are interviewing.</h4>
+      <select id="name-select">
+        <option value="Landon">Landon</option>
+        <option value="Carter">Carter</option></select
+      ><br />
+      <h4>
+        Please answer the following questions to the best of your ability.
+      </h4>
+      <div id="question-container">
+        <p id="question-text"></p>
+        <textarea id="answer-input" rows="4" cols="50"></textarea>
+        <div class="button-container">
+          <button id="prev-button" disabled>Previous</button>
+          <button id="next-button">Next</button>
+        </div>
+      </div>
+      <div id="progress">
+        Question <span id="current-question">1</span> of 20
+      </div>
+      When questionnaires are complete, they will be saved as text files in your
+      download folder. Please attach them to an email and send them to
+      <a href="mailto:stapps.prsvr@gmail.com">stapps.prsvr@gmail.com</a>
+
+      <p>&copy; 2024 Shawn M. Tapps</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
