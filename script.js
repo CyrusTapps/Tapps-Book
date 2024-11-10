@@ -36,6 +36,7 @@ function displayQuestion() {
   currentQuestionSpan.textContent = currentQuestion + 1;
   answerInput.value = answers[currentQuestion] || "";
   updateButtonStates();
+  answerInput.focus();
 }
 
 function updateButtonStates() {
